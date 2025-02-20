@@ -1,0 +1,18 @@
+{
+	"title": "",
+	"category": "API_CREDENTIAL",
+	"fields": [
+		{
+			"id": "key",
+			"type": "CONCEALED",
+			"label": "key",
+			"value": ""
+		},
+		{
+			"id": "type",
+			"type": "MENU",
+			"label": "type",
+			"value": ""
+		}
+	]
+}
