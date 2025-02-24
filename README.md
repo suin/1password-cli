@@ -8,6 +8,7 @@ A command-line tool for securely managing API keys using 1Password CLI. This too
 - Secure storage in 1Password
 - Vault selection from your available 1Password vaults
 - Structured API key storage with title, URL, and key
+- AWS access key management with automatic credential verification
 
 ## Prerequisites
 
@@ -41,6 +42,20 @@ This will start an interactive process that will:
 3. Ask for the associated URL
 4. Securely input the API key
 5. Store the information in your selected 1Password vault
+
+To store a new AWS access key:
+
+```bash
+just aws-access-key
+```
+
+This will:
+
+1. Ask for a descriptive name for the access key
+2. Securely input the AWS access key ID and secret access key
+3. Let you select a 1Password vault
+4. Store the credentials in your selected 1Password vault
+5. Verify the credentials by making a test API call
 
 ## Development
 

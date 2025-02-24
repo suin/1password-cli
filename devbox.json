@@ -3,7 +3,8 @@
   "packages": [
     "just@latest",
     "direnv@latest",
-    "gum@latest"
+    "gum@latest",
+    "awscli2@latest"
   ],
   "shell": {
     "init_hook": [

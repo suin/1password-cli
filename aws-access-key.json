@@ -1,0 +1,18 @@
+{
+	"title": "aws-access-key",
+	"category": "API_CREDENTIAL",
+	"fields": [
+		{
+			"id": "access key id",
+			"type": "STRING",
+			"label": "access key id",
+			"value": ""
+		},
+		{
+			"id": "secret access key",
+			"type": "CONCEALED",
+			"label": "secret access key",
+			"value": ""
+		}
+	]
+}
