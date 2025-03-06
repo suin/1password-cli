@@ -6,10 +6,10 @@ api-key:
     set -euo pipefail
     title=$(gum input --placeholder title)
     echo "Title: $title"
-    url=$(gum input --placeholder url)
-    echo "URL: $url"
     api_key=$(gum input --password --placeholder api_key)
     echo "API Key: $(echo $api_key | head -c 4)***"
+    url=$(gum input --placeholder url)
+    echo "URL: $url"
     vault=$(op vault list --format json | jq '.[].name' -r | gum filter)
     echo "Vault: $vault"
     op item create \
